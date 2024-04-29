@@ -1,4 +1,4 @@
-## Fundamental of Esbuild ✨
+## Fundamentals of Esbuild ✨
 
 - Extremely fast bundler for the web
 <img src="assets/1.png">
@@ -52,23 +52,23 @@ Here's a breakdown of esbuild vs SWC:
 
 ### Esbuild Disadvantages
 
-**Limited Configurability**: While simple to use, esbuild offers less flexibility in configuration compared to SWC.
+- **Limited Configurability**: While simple to use, esbuild offers less flexibility in configuration compared to SWC.
 
-**Compatibility**: esbuild might not support all the latest JavaScript features or transformations that SWC can handle.
+- **Compatibility**: esbuild might not support all the latest JavaScript features or transformations that SWC can handle.
 
 ### SWC Advantages
 
-**Compatibility**: SWC aims for high compatibility with Babel and TypeScript, making it a good choice for projects relying on a wider range of features.
+- **Compatibility**: SWC aims for high compatibility with Babel and TypeScript, making it a good choice for projects relying on a wider range of features.
 
-**Configurability**: SWC offers more extensive configuration options for fine-tuning the compilation process for specific needs.
+- **Configurability**: SWC offers more extensive configuration options for fine-tuning the compilation process for specific needs.
 
-**Future-Proofing**: Being written in Rust, SWC might benefit from performance improvements as Rust continues to evolve.
+- **Future-Proofing**: Being written in Rust, SWC might benefit from performance improvements as Rust continues to evolve.
 
 ### SWC Disadvantages
 
-**Speed**: While fast, SWC generally has slower build times compared to esbuild, especially for larger codebases.
+- **Speed**: While fast, SWC generally has slower build times compared to esbuild, especially for larger codebases.
 
-**Bundling**: Requires additional setup for bundling functionalities that esbuild offers out of the box.
+- **Bundling**: Requires additional setup for bundling functionalities that esbuild offers out of the box.
 
 ### Choosing Between Them:
 
@@ -263,12 +263,12 @@ $ tsc src/echo.ts --target es5 --outFile src/echo.js
 ```bash
 $ time tsc src/echo.ts --target es6 --outFile src/echo.js
 ```
-it tooks approx 3sec 
+it tooks approx `3sec`
 
 But with the esbuild
 
 ```bash
 $ npx esbuild --bundle src/echo.ts --outfile=src/echo.js
 ```
-it tooks approx 7ms
+it tooks approx `7ms`
 
